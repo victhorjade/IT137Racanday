@@ -1,0 +1,29 @@
+body
+{
+    font-family: 'poppins', sans-serif;
+    background: linear-gradient(to right, #0063B2FF, #9CC3D5FF, #0063B2FF) /*background color*/
+}
+.container /*iyang beach thingy*/
+{
+    height: 700px;
+    width: 80%;
+}
+.login /*css login*/
+{
+    position: absolute;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    padding: 80px 0px;
+}
+form
+{
+    background: rgba(0,0,0,0.6); /*transparent color inside carousel*/
+    padding: 30px;
+}
+.avatar img /*logo*/
+{
+    border: 2px solid white;
+    height: 120px;
+    width: 120px;
+}
