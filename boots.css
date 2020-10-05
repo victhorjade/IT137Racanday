@@ -27,3 +27,18 @@ form
     height: 120px;
     width: 120px;
 }
+.login2
+{
+    position: absolute;
+    height: auto;
+    width: 500px;
+    justify-content: center;
+}
+.field-icon {
+    float: right;
+    margin-left: -25px;
+    margin-top: 5px;
+    position: relative;
+    z-index: 2;
+    color: white;
+}

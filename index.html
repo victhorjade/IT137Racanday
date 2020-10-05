@@ -54,15 +54,16 @@
                         <label for="text" class="text-white">Email</label>
                     </div>
                     <div class="md-form">
-                        <input type="password" class="form-control text-white" id="psd" name="psd">
-                        <label for="psd" class="text-white">Password</label>
+                        <span toggle="#password" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                        <input type="password" class="form-control text-white" id="password" name="password">
+                        <label for="pasword" class="text-white">Password</label>
                     </div>
                     <div class="form-check mt-5">
                         <input type="checkbox" class="form-check-input" id="check" name="check">
                         <label for="check" class="text-light">Remember me</label>
                     </div>
                 <button type="button" class="btn btn-primary btn-md w-75 mt-3 mx-5">Log in</button>
-                <button type="button" class="btn btn-success btn-md w-75 mt-3 mx-5">Sign up</button>
+                <a class="btn btn-success btn-md w-75 mt-3 mx-5" href="registration.html" role="button">Create an Account?</a>
                 </form>
             </div>
             
@@ -79,6 +80,19 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>   
     
 </body>
+    
+<script>
+    $(".toggle-password").click(function() {
+
+        $(this).toggleClass("fa-eye fa-eye-slash");
+        var input = $($(this).attr("toggle"));
+        if (input.attr("type") == "password") {
+            input.attr("type", "text");
+        } else {
+            input.attr("type", "password");
+         }
+        });
+</script>
 
 
 </html>
